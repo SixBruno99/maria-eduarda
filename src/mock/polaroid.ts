@@ -7,10 +7,10 @@ import july from "../assets/images/07.jpeg";
 import august from "../assets/images/08.jpeg";
 
 export const polaroids: TPolaroid[] = [
-  { id: "1", date: "Março", image: march },
-  { id: "2", date: "Abril", image: april },
-  { id: "3", date: "Maio", image: may },
-  { id: "4", date: "Junho", image: june },
-  { id: "5", date: "Julho", image: july },
-  { id: "6", date: "Agosto", image: august },
+  { id: "1", date: "Março", image: march, description: "" },
+  { id: "2", date: "Abril", image: april, description: "" },
+  { id: "3", date: "Maio", image: may, description: "" },
+  { id: "4", date: "Junho", image: june, description: "" },
+  { id: "5", date: "Julho", image: july, description: "" },
+  { id: "6", date: "Agosto", image: august, description: "" },
 ];
