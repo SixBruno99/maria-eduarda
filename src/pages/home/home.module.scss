@@ -1,1 +1,9 @@
-.main {}
+.main {
+  min-height: 100vh;
+  margin: 64px;
+
+  .polaroidContainer {
+    display: grid;
+    gap: 16px;
+  }
+}
