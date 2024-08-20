@@ -1,0 +1,61 @@
+.timerContainer {
+  display: flex;
+  background-color: burlywood;
+  gap: 32px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px;
+
+  img {
+    width: 50%;
+    border-radius: 16px;
+  }
+
+  .timerText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    .time {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+      font-weight: 700;
+
+      span {
+        margin-bottom: 8px;
+        font-size: 20px;
+      }
+
+      .secondsContainer {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        gap: 8px;
+
+        .seconds {
+          font-size: 20px;
+          animation: slideIn 1s ease forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
