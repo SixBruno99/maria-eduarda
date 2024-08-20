@@ -2,6 +2,10 @@
   min-height: 100vh;
   margin: 64px;
 
+  @media (max-width: 1168px) {
+    margin: 32px;
+  }
+
   @media (max-width: 768px) {
     margin: 16px;
   }
@@ -9,8 +13,8 @@
   .timerContainer {
     margin-inline: 64px;
     margin-bottom: 64px;
-    
-    @media (max-width: 768px) {
+
+    @media (max-width: 1168px) {
       margin-inline: 32px;
       margin-bottom: 32px;
     }
@@ -26,5 +30,13 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 16px;
+
+    @media (max-width: 840px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 568px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

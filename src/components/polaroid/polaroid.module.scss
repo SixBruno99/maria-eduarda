@@ -2,6 +2,16 @@
   height: 420px;
   width: 320px;
 
+  @media (max-width: 1168px) {
+    height: 400px;
+    width: 300px;
+  }
+
+  @media (max-width: 1024px) {
+    height: 360px;
+    width: 240px;
+  }
+
   .polaroid {
     height: 100%;
     width: 100%;
@@ -16,6 +26,17 @@
       width: 280px;
       height: 320px;
       perspective: 1000px;
+
+      @media (max-width: 1168px) {
+        width: 260px;
+        height: 300px;
+      }
+
+      @media (max-width: 1024px) {
+        height: 280px;
+        width: 210px;
+      }
+    
 
       .flipCard {
         width: 100%;
@@ -59,6 +80,11 @@
           font-size: 20px;
           font-weight: 800;
           padding: 20px;
+
+          @media (max-width: 1024px) {
+            font-size: 18px;
+            padding: 12px;
+          }
         }
       }
     }
