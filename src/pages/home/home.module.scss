@@ -2,9 +2,22 @@
   min-height: 100vh;
   margin: 64px;
 
+  @media (max-width: 768px) {
+    margin: 16px;
+  }
+
   .timerContainer {
     margin-inline: 64px;
     margin-bottom: 64px;
+    
+    @media (max-width: 768px) {
+      margin-inline: 32px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 768px) {
+      margin-inline: 16px;
+    }
   }
 
   .polaroidContainer {

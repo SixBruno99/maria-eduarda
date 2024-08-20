@@ -40,10 +40,10 @@ export default function Timer() {
         <h1>Duda Gaymer</h1>
         <h2>Nós estamos juntos há:</h2>
         <div className={styles.time}>
-          <span>{timeElapsed.months} meses...</span>
-          <span>{timeElapsed.days} dias...</span>
-          <span>{timeElapsed.hours} horas...</span>
-          <span>{timeElapsed.minutes} minutos...</span>
+          <span>{timeElapsed.months} meses</span>
+          <span>{timeElapsed.days} dias</span>
+          <span>{timeElapsed.hours} horas</span>
+          <span>{timeElapsed.minutes} minutos</span>
           <div className={styles.secondsContainer}>
             <div key={timeElapsed.seconds} className={styles.seconds}>
               {timeElapsed.seconds}
