@@ -2,10 +2,12 @@ import styles from "./home.module.scss";
 import { polaroids } from "../../mock/polaroid";
 import Timer from "../../components/timer/timer";
 import Polaroid from "../../components/polaroid/polaroid";
+import reflections from "../../assets/music/reflections.mp3";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <audio src={reflections} loop controls/>
       <div className={styles.timerContainer}>
         <Timer />
       </div>

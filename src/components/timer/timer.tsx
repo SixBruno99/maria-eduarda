@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./timer.module.scss";
 import we from "../../assets/images/23.06.jpg";
+import spcode from "../../assets/images/spcode.jpeg";
 
 export default function Timer() {
   const [timeElapsed, setTimeElapsed] = useState({
@@ -35,7 +36,10 @@ export default function Timer() {
 
   return (
     <div className={styles.timerContainer}>
-      <img src={we} alt="We" />
+      <div className={styles.imagesContainer}>
+        <img className={styles.we} src={we} alt="we" />
+        <img className={styles.spcode} src={spcode} alt="spcode" />
+      </div>
       <div className={styles.timerText}>
         <h1>Duda Gaymer</h1>
         <h2>Nós estamos juntos há:</h2>

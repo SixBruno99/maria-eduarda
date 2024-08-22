@@ -7,24 +7,39 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px;
 
   @media (max-width: 1168px) {
-    flex-direction: column;
     gap: 16px;
   }
 
   @media (max-width: 768px) {
+    flex-direction: column;
     padding: 16px;
   }
 
-  img {
-    width: 50%;
-    border-radius: 16px;
+  .imagesContainer {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
 
-    @media (max-width: 1480px) {
-      width: 40%;
+    @media (max-width: 768px) {
+      max-width: 100%;
     }
 
-    @media (max-width: 1168px) {
-      width: 100%;
+    .we {
+      border-radius: 16px;
+      
+      @media (max-width: 468px) {
+        border-radius: 16px 16px 0 0;
+      }
+    }
+
+    .spcode {
+      display: none;
+      border-radius: 0 0 16px 16px;
+
+      @media (max-width: 468px) {
+        display: grid;
+      }
     }
   }
 
@@ -59,7 +74,7 @@
         font-size: 20px;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 1168px) {
         font-size: 18px;
       }
 
@@ -70,9 +85,13 @@
 
     .time {
       display: flex;
-      gap: 8px;
       margin-top: 16px;
       font-weight: 700;
+      gap: 8px;
+
+      @media (max-width: 768px) {
+        gap: 4px;
+      }
 
       span {
         margin-bottom: 8px;
@@ -80,6 +99,10 @@
 
         @media (max-width: 1440px) {
           font-size: 16px;
+        }
+
+        @media (max-width: 1168px) {
+          font-size: 10px;
         }
 
         @media (max-width: 768px) {
@@ -103,6 +126,11 @@
 
           @media (max-width: 1440px) {
             font-size: 16px;
+          }
+
+          @media (max-width: 1168px) {
+            font-size: 10px;
+            gap: 4px;
           }
 
           @media (max-width: 768px) {
