@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./timer.module.scss";
 import we from "../../assets/images/23.06.jpg";
+import spcode from "../../assets/images/spcode.png";
+import reflections from "../../assets/music/reflections.mp3";
 
 export default function Timer() {
   const [timeElapsed, setTimeElapsed] = useState({
@@ -10,6 +12,25 @@ export default function Timer() {
     minutes: 0,
     seconds: 0,
   });
+
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const musicRef = useRef<HTMLAudioElement | null>(null);
+
+  const handlePlayMusic = () => {
+    if (musicRef.current) {
+      if (isPlaying) {
+        musicRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        musicRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    musicRef.current = new Audio(reflections);
+  }, []);
 
   useEffect(() => {
     const startDate = new Date("2024-03-23T00:00:00").getTime();
@@ -35,7 +56,15 @@ export default function Timer() {
 
   return (
     <div className={styles.timerContainer}>
-      <img src={we} alt="We" />
+      <div className={styles.imagesContainer}>
+        <img className={styles.we} src={we} alt="we" />
+        <img
+          onClick={handlePlayMusic}
+          className={styles.spcode}
+          src={spcode}
+          alt="spcode"
+        />
+      </div>
       <div className={styles.timerText}>
         <h1>Duda Gaymer</h1>
         <h2>Nós estamos juntos há:</h2>
