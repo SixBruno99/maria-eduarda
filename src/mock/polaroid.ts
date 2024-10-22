@@ -6,6 +6,7 @@ import june from "../assets/images/06.jpeg";
 import july from "../assets/images/07.jpeg";
 import august from "../assets/images/08.jpeg";
 import september from "../assets/images/09.jpeg";
+import october from "../assets/images/10.jpeg";
 
 export const polaroids: TPolaroid[] = [
   {
@@ -55,6 +56,13 @@ export const polaroids: TPolaroid[] = [
     date: "Setembro",
     image: september,
     description:
-      "Setembro, o mês que fortalecemos nossa relação e somos capazes de resolver qualquer coisa juntos",
+      "Setembro, o mês que fortalecemos nossa relação e somos capazes de resolver qualquer coisa juntos.",
+  },
+  {
+    id: "7",
+    date: "Outubro",
+    image: october,
+    description:
+      "Outubro, o mês que percebi que cada sorriso seu ilumina ainda mais os meus dias, e que nosso amor cresce a cada momento que passamos juntos.",
   },
 ];
