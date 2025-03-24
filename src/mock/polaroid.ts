@@ -97,7 +97,7 @@ export const polaroids: TPolaroid[] = [
     date: "Fevereiro 2025",
     image: february2025,
     description:
-      "Fevereiro, o mês que você esteve presente nas minhas conqueistas e mostrou o quão dedicada é na nossa relação",
+      "Fevereiro, o mês que você esteve presente nas minhas conquistas e mostrou o quão dedicada é na nossa relação",
   },
   {
     id: "13",
