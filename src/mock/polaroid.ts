@@ -11,6 +11,7 @@ import october2024 from "../assets/images/2024/10.jpeg";
 import november2024 from "../assets/images/2024/11.jpeg";
 import december2024 from "../assets/images/2024/12.jpeg";
 import january2025 from "../assets/images/2025/01.jpeg";
+import february2025 from "../assets/images/2025/02.jpeg";
 
 export const polaroids: TPolaroid[] = [
   {
@@ -90,4 +91,12 @@ export const polaroids: TPolaroid[] = [
     description:
       "Janeiro, o mês que revitalizamos nossa relação, cada vez mostramos mais o quanto queremos um ao outro.",
   },
+  {
+    id: "12",
+    date: "Fevereiro 2025",
+    image: february2025,
+    description:
+      "Fevereiro, o mês que você esteve presente nas minhas conqueistas e mostrou o quão dedicada é na nossa relação",
+  },
+
 ];
